@@ -1,0 +1,368 @@
+*{
+	box-sizing: border-box;
+}
+/* HEADER */
+
+#div1 img{
+    width: 80px;
+	height: 80px;
+	margin-top: 1%;
+	
+	}
+#heading{
+    font-family: 'Do Hyeon', sans-serif;
+	font-size: 2em;
+	//padding-right:8%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	margin-top: -90px;
+	}
+header{
+	//display: block;
+	//background: #42bcf4;
+	//background: lightblue;
+	//background: rgb(50,50,50);
+	height: auto;
+	padding: 3px;
+	margin-top: -10px;
+	//clear: both;
+	clear: both;
+	margin-top: -10px;
+	height: 100px;
+	margin-left: -7px;
+	margin-right: -7px;
+	padding: 0;
+}
+#sub-heading{
+	display: block;
+	font-size: 1em;
+	font-family: 'Jura', sans-serif;
+	font-weight: 700;
+	//padding-right: 10%;
+	text-align: center;
+	margin-top: -40px;
+	//font-style: italic;
+    text-decoration: underline;
+	color: green;
+}
+#div2{
+	height: 100px;
+}
+header nav{
+	width: 100%;
+	height: 50px;
+	background: rgb(50,50,50);
+	color: white;
+	margin-top: -11px;
+}
+nav li{
+	float: left;
+	list-style-type: none;
+	margin: 10px;
+}
+nav li:last-child{
+	float: right;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.navbutton{
+	background: inherit;
+	color: white;
+	display: block;
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	border: 0;
+	margin-top: -10px;
+	font-weight: bold;
+	font-size: 1em;
+}
+.navbutton a{
+	text-decoration: none;
+	color: inherit;
+}
+nav button:hover{
+	background: red;
+}
+.dropdown{
+	//overflow: hidden;
+	position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(50,50,50);
+    min-width: 160px;
+	//max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	overflow: auto;
+}
+.dropdown-content button {
+	background: inherit;
+	color: white;
+	width: 160px;
+	height: 60px;
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    //text-align: center;
+	margin-left: -50px;
+	margin-top: -10px;
+	margin-right: -10px;
+}
+.dropdown-content a {
+	text-decoration: none;
+	color: inherit;
+}
+#btn2{
+	margin-top: -21px;
+}
+#btn3{
+	margin-top: -21px;
+}
+#btn4{
+	margin-top: -21px;
+}
+#btn5{
+	margin-top: -21px;
+}
+#btn6{
+	margin-top: -21px;
+	margin-bottom: -10px;
+}
+/* MAIN */
+main{
+	width: 80%;
+	//max-height: 800px;
+	min-height: 400px;
+	border: 2px solid grey;
+	margin: 0 auto;
+	margin-top: 60px;
+	overflow: auto;
+}
+main .main-content{
+	display: none;
+	//overflow: auto;
+	//max-height: 400px;
+}
+main #d1{
+	display: block;
+}
+.main-content p{
+	font-size: 25px;
+	font-weight: bold;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.check{
+	
+}
+.prev{
+	float: left;
+	background: green;
+	color: white;
+	padding: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+	width: 100px;
+	margin-left: 20px;
+}
+.next{
+	float: right;
+	background: green;
+	color: white;
+	padding: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+	width: 100px;
+	margin-right: 50px;
+}
+
+/* FOOTER */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content button:hover{
+	height: 80px;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.animate {
+    animation: animatezoom 0.6s;
+}
+.modal{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+	position: relative;
+	background-color: #fefefe;
+	width: 30%;
+	margin: 5% auto;
+	border: 1px solid #888;
+	overflow: auto;
+}
+ 
+.cross{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 2em;
+	font-weight: bold;
+}
+.cross:hover{
+	//font-size: 2.5em;
+	color: red;
+	cursor: pointer;
+}
+footer{
+	//position: absolute;
+	//bottom: 0;
+	text-align: center;
+	//background: #42bcf4;
+	background: rgba(50,50,50,1);
+	height: 75px;
+	margin-top: 20px;
+	font-size: 1em;
+	//width: 100%;
+	margin-left: -5px;
+	margin-right: -10px;
+}
+footer button{
+	width: auto;
+	border: 0;
+	text-decoration: underline;
+	display: inline-block;
+	margin-top: 5px;
+	cursor: pointer;
+	background: transparent;
+	color: white;
+	font-size: 0.8em;
+	}
+footer br~span{
+	//text-align: left;
+	color: white;
+}
+footer img{
+	//border: 1px solid transparent;
+	//border-radius: 60%;
+	margin-top: 5px;
+	vertical-align: bottom;
+}
+#div5 .modal-content{
+	margin-top: 0%;
+	height: 85%;
+}
+caption{
+	//text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: underline;
+	color: green;
+}
+table,td{
+	border: 2px solid red;
+	border-collapse: collapse;
+}
+table{
+	width: 90%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+td:nth-child(even){
+	background: #fff0f5;
+}
+td:nth-child(odd){
+	background: #e6e6fa;
+}
+.pp{
+	
+	//vertical-align: top;
+}
+.desc{
+	//max-width: 80%;
+}
+#two{
+	background-image: url(20150501_202542.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: ;
+}
+td a{
+	//text-align: center;
+	word-wrap: break-word;
+}
+a img{
+	width: 20px ;
+	height: 20px;
+}
+@media(max-width: 700px){
+	#heading{
+		font-size: 1.3em;
+	}
+}

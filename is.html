@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Information Security</title>
+<link href="is.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <div id="div1">
+      <img src="logo.gif" alt="university_logo">
+    </div>
+    <div id="div2">
+      <p id="heading">CENTRAL UNIVERSITY OF RAJASTHAN</p><br/>
+    </div>
+	<span id="sub-heading">Integrated Msc Computer Science VI<sup>th</sup> Semester(2015 Batch)</span>
+    <nav class="clearfix">
+	 <ul>
+	    <li><button class="navbutton"><a href="home.html">Home</a></button></li>
+	    <li><div class="dropdown"><button class="navbutton">Quiz &#x25BE;</button>
+		       <div class="dropdown-content">
+			      <ul>
+				    <li><button><a href="daa.html">Design And Analysis of Algorithms</a>
+					</button></li><br/>
+				    <li><button id="btn2"><a href="toc.html">Theory Of Computation</a>
+					</button></li><br/>
+				    <li><button id="btn3"><a href="cg.html">Computer Graphics</a>
+					</button></li><br/>
+				    <li><button id="btn4"><a href="it.html">Internet Technologies</a>
+					</button></li>
+				    <li><button id="btn5"><a href="is.html">Information Security</a>
+					</button></li><br/>
+				    <li><button id="btn6"><a href="ip.html">Image Processing</a>
+					</button></li>
+				  </ul>
+			   </div>
+		</li>
+		<li><div class="dropdown"><button class="navbutton" style="width: 150px;">Previous year Questions&#x25BE;</button>
+		<div class="dropdown-content">
+			      <ul>
+				    <li><button><a href="ds.pdf" download>Logic and Discrete Mathematics(2010)</a>
+					</button></li><br/>
+				    <li><button id="btn2"><a href="eose2017.pdf" download>Information Security(2016)</a>
+					</button></li><!--<br/>
+				    <li><button id="btn3"><a href="cg.html">Computer Graphics</a>
+					</button></li><br/>
+				    <li><button id="btn4"><a href="it.html">Internet Technologies</a>
+					</button></li>
+				    <li><button id="btn5"><a href="is.html">Information Security</a>
+					</button></li><br/>
+				    <li><button id="btn6"><a href="ip.html">Image Processing</a>
+					</button></li>-->
+				  </ul>
+			   </div>
+		</li>
+	    <li><button class="navbutton">Logout</button>
+		</li>
+	 </ul>
+	</nav>
+ </header>
+ <main>
+   <div id="d1" class="main-content">
+	  <p>Q1. Use Caesar’s Cipher to decipher the following<br/>
+         HQFUBSWHG WHAW</p>
+	  <label class="container"><span>ABANDONED LOCK</span>
+	  <input type="radio" value=1" name="Q1" id="q1o1" onclick="checkAnswer(1,'q1o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>ENCRYPTED TEXT</span>
+	  <input type="radio" value="2" name="Q1" id="q1o2" onclick="checkAnswer(1,'q1o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark">
+	  </span></label><br/> <label class="container"><span>ABANDONED TEXT</span>
+	   <input type="radio" value="3" name="Q1" id="q1o3" onclick="checkAnswer(1,'q1o3');">
+	   &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>ENCRYPTED LOCK</span>
+	   <input type="radio" value="4" name="Q1" id="q1o4" onclick="checkAnswer(1,'q1o4');">
+	   &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label><br/>
+	   <button class="next" onclick="next('d1','d2');">Next >></button>
+   </div>
+   
+   <div id="d2" class="main-content">
+	  <p>Q2. Caesar Cipher is an example of</p>
+	  <label class="container"><span>Poly-alphabetic Cipher</span>
+	  <input type="radio" value="1" name="Q1" id="q2o1" onclick="checkAnswer(2,'q2o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Mono-alphabetic Cipher</span>
+	  <input type="radio" value="2" name="Q1" id="q2o2" onclick="checkAnswer(2,'q2o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	   <span class="checkmark"></span></label><br/> <label class="container"><span>Multi-
+	   alphabetic Cipher</span> 
+	   <input type="radio" value="3" name="Q1" id="q2o3" onclick="checkAnswer(2,'q2o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Bi-alphabetic Cipher</span>
+	   <input type="radio" value="4" name="Q1" id="q2o4" onclick="checkAnswer(2,'q2o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d1');"> >> Prev </button>
+	   <button class="next" onclick="next('d2','d3');">Next >></button>
+   </div>
+   
+   <div id="d3" class="main-content">
+	 <p>Q3. Choose from among the following cipher systems, from best to the worst, with respect
+	 to ease of decryption using frequency analysis.</p>
+	  <label class="container"><span>Random Polyalphabetic, Plaintext, Playfair</span>
+	  <input type="radio" value="1" name="Q1" id="q3o1" onclick="checkAnswer(3,'q3o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Random Polyalphabetic, Playfair, Vignere</span>
+	  <input type="radio" value="2" name="Q1" id="q3o2" onclick="checkAnswer(3,'q3o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>Random 
+		Polyalphabetic, Vignere, Playfair, Plaintext</span> 
+	   <input type="radio" value="3" name="Q1" id="q3o3" onclick="checkAnswer(3,'q3o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Random Polyalphabetic, Plaintext, Beaufort, Playfair</span>
+	   <input type="radio" value="4" name="Q1" id="q3o4" onclick="checkAnswer(3,'q3o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d2');"> >> Prev </button>
+	   <button class="next" onclick="next('d3','d4');">Next >></button>
+   </div>
+   
+   <div id="d4" class="main-content">
+	  <p>Q4. On Encrypting “cryptography” using Vignere Cipher System using the keyword “LUCKY”
+	  we get cipher text</p>
+	  <label class="container"><span>nlazeiibljji</span>
+	  <input type="radio" value="1" name="Q1" id="q4o1" onclick="checkAnswer(4,'q4o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>nlazeiibljii</span>
+	  <input type="radio" value="2" name="Q1" id="q4o2" onclick="checkAnswer(4,'q4o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>olaaeiibljki</span> 
+	   <input type="radio" value="3" name="Q1" id="q4o3" onclick="checkAnswer(4,'q4o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>mlaaeiibljki</span>
+	   <input type="radio" value="4" name="Q1" id="q4o4" onclick="checkAnswer(4,'q4o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d3');"> >> Prev </button>
+	   <button class="next" onclick="next('d4','d5');">Next >></button>
+   </div>
+   
+   <div id="d5" class="main-content">
+	  <p>Q5.  Which of the following slows the cryptographic algorithm –<br/>
+      1) Increase in Number of rounds<br/>
+      2) Decrease in Block size<br/>
+      3) Decrease in Key Size<br/>
+      4) Increase in Sub key Generation</p>
+	  <label class="container"><span>1 and 3</span>
+	  <input type="radio" value="1" name="Q1" id="q5o1" onclick="checkAnswer(5,'q5o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>2 and 3</span>
+	  <input type="radio" value="2" name="Q1" id="q5o2" onclick="checkAnswer(5,'q5o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>3 and 4</span> 
+	   <input type="radio" value="3" name="Q1" id="q5o3" onclick="checkAnswer(5,'q5o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>2 and 4</span>
+	   <input type="radio" value="4" name="Q1" id="q5o4" onclick="checkAnswer(5,'q5o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d4');"> >> Prev </button>
+	   <button class="next" onclick="next('d5','d6');">Next >></button>
+   </div>
+   
+   <div id="d6" class="main-content">
+	  <p>Q6. The DES Algorithm Cipher System consists of ____________rounds (iterations) each 
+	  with a round key</p>
+	  <label class="container"><span>12</span>
+	  <input type="radio" value="1" name="Q1" id="q6o1" onclick="checkAnswer(6,'q6o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>18</span>
+	  <input type="radio" value="2" name="Q1" id="q6o2" onclick="checkAnswer(6,'q6o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>9</span> 
+	   <input type="radio" value="3" name="Q1" id="q6o3" onclick="checkAnswer(6,'q6o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>16</span>
+	   <input type="radio" value="4" name="Q1" id="q6o4" onclick="checkAnswer(6,'q6o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d5');"> >> Prev </button>
+	   <button class="next" onclick="next('d6','d7');">Next >></button>
+   </div>
+   
+   <div id="d7" class="main-content">
+	  <p>Q7. The DES algorithm has a key length of</p>
+	  <label class="container"><span>128 Bits</span>
+	  <input type="radio" value="1" name="Q1" id="q7o1" onclick="checkAnswer(7,'q7o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>32 Bits</span>
+	  <input type="radio" value="2" name="Q1" id="q7o2" onclick="checkAnswer(7,'q7o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>64 Bits</span> 
+	  <input type="radio" value="3" name="Q1" id="q7o3" onclick="checkAnswer(7,'q7o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>16 Bits</span>
+	   <input type="radio" value="4" name="Q1" id="q7o4" onclick="checkAnswer(7,'q7o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d6');"> >> Prev </button>
+	   <button class="next" onclick="next('d7','d8');">Next >></button>
+   </div>
+   
+   <div id="d8" class="main-content">
+	  <p>Q8. In the DES algorithm the round key is __________ bit and the Round Input is
+	  ____________bits.</p>
+	  <label class="container"><span>48, 32</span>
+	  <input type="radio" value="1" name="Q1" id="q8o1" onclick="checkAnswer(8,'q8o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>64,32</span>
+	  <input type="radio" value="2" name="Q1" id="q8o2" onclick="checkAnswer(8,'q8o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>56, 24</span> 
+	  <input type="radio" value="3" name="Q1" id="q8o3" onclick="checkAnswer(8,'q8o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>32, 32</span>
+	   <input type="radio" value="4" name="Q1" id="q8o4" onclick="checkAnswer(8,'q8o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d7');"> >> Prev </button>
+	   <button class="next" onclick="next('d8','d9');">Next >></button>
+   </div>
+   
+   <div id="d9" class="main-content">
+	  <p>Q9. In the DES algorithm the Round Input is 32 bits, which is expanded to 48 bits 
+	  via ____________</p>
+	  <label class="container"><span> Scaling of the existing bits</span>
+	  <input type="radio" value="1" name="Q1" id="q9o1" onclick="checkAnswer(9,'q9o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Duplication of the existing bits</span>
+	  <input type="radio" value="2" name="Q1" id="q9o2" onclick="checkAnswer(9,'q9o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Addition of zeros</span> 
+	  <input type="radio" value="3" name="Q1" id="q9o3" onclick="checkAnswer(9,'q9o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Addition of ones</span>
+	   <input type="radio" value="4" name="Q1" id="q9o4" onclick="checkAnswer(9,'q9o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d8');"> >> Prev </button>
+	   <button class="next" onclick="next('d9','d10');">Next >></button>
+   </div>
+   
+   <div id="d10" class="main-content">
+	  <p>Q.10 In DES algorithm the Initial Permutation table/matrix is of size</p>
+	  <label class="container"><span>16×8</span>
+	  <input type="radio" value="1" name="Q1" id="q10o1" onclick="checkAnswer(10,'q10o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>12×8</span>
+	  <input type="radio" value="2" name="Q1" id="q10o2" onclick="checkAnswer(10,'q10o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>8×8</span> 
+	  <input type="radio" value="3" name="Q1" id="q10o3" onclick="checkAnswer(10,'q10o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>4×8</span>
+	   <input type="radio" value="4" name="Q1" id="q10o4" onclick="checkAnswer(10,'q10o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d9');"> >> Prev </button>
+	   <button class="next" onclick="next('d10','d11');">Next >></button>
+   </div>
+   
+   <div id="d11" class="main-content">
+	  <p>Q11. The number of unique substitution boxes in DES after the 48 bit XOR operation are</p>
+	  <label class="container"><span>8</span>
+	  <input type="radio" value="1" name="Q1" id="q11o1" onclick="checkAnswer(11,'q11o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>4</span>
+	  <input type="radio" value="2" name="Q1" id="q11o2" onclick="checkAnswer(11,'q11o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>6</span> 
+	  <input type="radio" value="3" name="Q1" id="q11o3" onclick="checkAnswer(11,'q11o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>12</span>
+	   <input type="radio" value="4" name="Q1" id="q11o4" onclick="checkAnswer(11,'q11o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d10');"> >> Prev </button>
+	   <button class="next" onclick="next('d11','d12');">Next >></button>
+   </div>
+   
+   <div id="d12" class="main-content">
+	  <p>Q12. The number of tests required to break the DES algorithm are</p>
+	  <label class="container"><span>2.8×10<sup>14</sup></span>
+	  <input type="radio" value="1" name="Q1" id="q12o1" onclick="checkAnswer(12,'q12o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>4.2×10<sup>9</sup></span>
+	  <input type="radio" value="2" name="Q1" id="q12o2" onclick="checkAnswer(12,'q12o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>1.84×10<sup>19</sup></span> 
+	  <input type="radio" value="3" name="Q1" id="q12o3" onclick="checkAnswer(12,'q12o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>7.2×10<sup>16</sup></span>
+	   <input type="radio" value="4" name="Q1" id="q12o4" onclick="checkAnswer(12,'q12o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d11');"> >> Prev </button>
+	   <button class="next" onclick="next('d12','d13');">Next >></button>
+   </div>
+   
+   <div id="d13" class="main-content">
+	  <p>Q13. What is 11 mod 7 and -11 mod 7?</p>
+	  <label class="container"><span>4 and 5</span>
+	  <input type="radio" value="1" name="Q1" id="q13o1" onclick="checkAnswer(13,'q13o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>4 and 4</span>
+	  <input type="radio" value="2" name="Q1" id="q13o2" onclick="checkAnswer(13,'q13o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>5 and 3</span> 
+	  <input type="radio" value="3" name="Q1" id="q13o3" onclick="checkAnswer(13,'q13o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>4 and -4</span>
+	   <input type="radio" value="4" name="Q1" id="q13o4" onclick="checkAnswer13,'q13o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d12');"> >> Prev </button>
+	   <button class="next" onclick="next('d13','d14');">Next >></button>
+   </div>
+   
+   <div id="d14" class="main-content">
+	  <p>Q14. AES uses a ____________ bit block size and a key size of __________ bits.</p>
+	  <label class="container"><span>128; 128 or 256</span>
+	  <input type="radio" value="1" name="Q1" id="q14o1" onclick="checkAnswer(14,'q14o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>64; 128 or 192</span>
+	  <input type="radio" value="2" name="Q1" id="q14o2" onclick="checkAnswer(14,'q14o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span> 256; 128, 192, or 256</span> 
+	  <input type="radio" value="3" name="Q1" id="q14o3" onclick="checkAnswer(14,'q14o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>128; 128, 192, or 256</span>
+	   <input type="radio" value="4" name="Q1" id="q14o4" onclick="checkAnswer(14,'q14o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d13');"> >> Prev </button>
+	   <button class="next" onclick="next('d14','d15');">Next >></button>
+   </div>
+   
+   <div id="d15" class="main-content">
+	  <p>Q15.  How many rounds does the AES-192 perform?</p>
+	  <label class="container"><span>10</span>
+	  <input type="radio" value="1" name="Q1" id="q15o1" onclick="checkAnswer(15,'q15o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>12</span>
+	  <input type="radio" value="2" name="Q1" id="q15o2" onclick="checkAnswer(15,'q15o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>14</span> 
+	  <input type="radio" value="3" name="Q1" id="q15o3" onclick="checkAnswer(15,'q15o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>16</span>
+	   <input type="radio" value="4" name="Q1" id="q15o4" onclick="checkAnswer(15,'q15o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d14');"> >> Prev </button>
+	   <button class="next" onclick="next('d15','d16');">Next >></button>
+   </div>
+   
+   <div id="d16" class="main-content">
+	  <p>Q16. How many rounds does the AES-256 perform?</p>
+	  <label class="container"><span>10</span>
+	  <input type="radio" value="1" name="Q1" id="q16o1" onclick="checkAnswer(16,'q16o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>12</span>
+	  <input type="radio" value="2" name="Q1" id="q16o2" onclick="checkAnswer(16,'q16o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>14</span> 
+	  <input type="radio" value="3" name="Q1" id="q16o3" onclick="checkAnswer(16,'q16o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>16</span>
+	   <input type="radio" value="4" name="Q1" id="q16o4" onclick="checkAnswer(16,'q16o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d15');"> >> Prev </button>
+	   <button class="next" onclick="next('d16','d17');">Next >></button>
+   </div>
+   
+   <div id="d17" class="main-content">
+	  <p>17. The 4×4 byte matrices in the AES algorithm are called</p>
+	  <label class="container"><span>States</span>
+	  <input type="radio" value="1" name="Q1" id="q17o1" onclick="checkAnswer(17,'q17o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Words</span>
+	  <input type="radio" value="2" name="Q1" id="q17o2" onclick="checkAnswer(17,'q17o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Transitions</span> 
+	  <input type="radio" value="3" name="Q1" id="q17o3" onclick="checkAnswer(17,'q17o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Permutations</span>
+	   <input type="radio" value="4" name="Q1" id="q17o4" onclick="checkAnswer(17,'q17o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d16');"> >> Prev </button>
+	   <button class="next" onclick="next('d17','d18');">Next >></button>
+   </div>
+   
+   <div id="d18" class="main-content">
+	  <p>18. In AES the 4×4 bytes matrix key is transformed into a keys of size __________</p>
+	  <label class="container"><span>32 words</span>
+	  <input type="radio" value="1" name="Q1" id="q18o1" onclick="checkAnswer(18,'q18o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span> 64 words</span>
+	  <input type="radio" value="2" name="Q1" id="q18o2" onclick="checkAnswer(18,'q18o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>54 words</span> 
+	  <input type="radio" value="3" name="Q1" id="q18o3" onclick="checkAnswer(18,'q18o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>44 words</span>
+	   <input type="radio" value="4" name="Q1" id="q18o4" onclick="checkAnswer(18,'q18o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d17');"> >> Prev </button>
+	   <button class="next" onclick="next('d18','d19');">Next >></button>
+   </div>
+   
+   <div id="d19" class="main-content">
+	  <p>19. Which of the 4 operations are false for each round in the AES algorithm<br/>
+      i) Substitute Bytes<br/>
+      ii) Shift Columns<br/>
+      iii) Mix Rows<br/>
+      iv) XOR Round Key</p>
+	  <label class="container"><span> i) only</span>
+	  <input type="radio" value="1" name="Q1" id="q19o1" onclick="checkAnswer(19,'q19o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>ii) iii) and iv)</span>
+	  <input type="radio" value="2" name="Q1" id="q19o2" onclick="checkAnswer(19,'q19o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span> ii) and iii)</span> 
+	  <input type="radio" value="3" name="Q1" id="q19o3" onclick="checkAnswer(19,'q19o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>only iv)</span>
+	   <input type="radio" value="4" name="Q1" id="q19o4" onclick="checkAnswer(19,'q19o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d18');"> >> Prev </button>
+	   <button class="next" onclick="next('d19','d20');">Next >></button>
+   </div>
+   
+   <div id="d20" class="main-content">
+	  <p>20. The number of tests required to break the Double DES algorithm are</p>
+	  <label class="container"><span> 2112</span>
+	  <input type="radio" value="1" name="Q1" id="q20o1" onclick="checkAnswer(20,'q20o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>2111</span>
+	  <input type="radio" value="2" name="Q1" id="q20o2" onclick="checkAnswer(20,'q20o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span> 2128</span> 
+	  <input type="radio" value="3" name="Q1" id="q20o3" onclick="checkAnswer(20,'q20o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>2119</span>
+	   <input type="radio" value="4" name="Q1" id="q20o4" onclick="checkAnswer(20,'q20o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d19');"> >> Prev </button>
+	   <!--<button class="next" onclick="next('d20','d21');">Next >></button>-->
+   </div>
+ </main>
+ <footer>
+<button onclick="showOverlay1();">Our Batch</button>
+<button class="foobtn" onclick="showOverlay2();">Contact Us</button>
+<div class="modal" id="div5">
+ <div class="modal-content animate">
+  <span class="cross" onclick="hideOverlay1();">&times;</span>
+  <table style="padding: 0;">
+    <caption>VI<sup>th</sup> Semester</caption>
+	<tbody>
+	  <tr>
+	    <td class="pp">
+		 <img src="slider1.jpg" alt="Aakash Choudhary" style="width: 80px; height: auto;">
+		</td>
+		<td class="desc">
+		 <p>Aakash Choudhary<br/>
+		 Enrollment- 2015imscs001<br/>
+		 <a href="mailto:2015imscs001@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp" id="two">
+		 <!--<img src="20150501_202542.jpg" alt="It's me" style="width: 80px; height: auto;">-->
+		</td>
+		<td class="desc">
+		 <p>Ashish Gautam<br/>
+		 Enrollment- 2015imscs002<br/>
+		 <a href="mailto:2015imscs002@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ashish Yadav<br/>
+		 Enrollment- 2015imscs003<br/>
+		 <a href="mailto:2015imscs003@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ipsita Patnaik<br/>
+		 Enrollment- 2015imscs005<br/>
+		 <a href="mailto:2015imscs005@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Kumar Shikhar<br/>
+		 Enrollment- 2015imscs006<br/>
+		 <a href="mailto:2015imscs006@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Lav Kumar<br/>
+		 Enrollment- 2015imscs007<br/>
+		 <a href="mailto:2015imscs007@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Manish Kumar Choumiyan<br/>
+		 Enrollment- 2015imscs009<br/>
+		 <a href="mailto:2015imscs009@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Nitesh Sukhwani<br/>
+		 Enrollment- 2015imscs010<br/>
+		 <a href="mailto:2015imscs010@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Pravin Choudhary<br/>
+		 Enrollment- 2015imscs012<br/>
+		 <a href="mailto:2015imscs012@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Priyanshu Kumari<br/>
+		 Enrollment- 2015imscs014<br/>
+		 <a href="mailto:2015imscs014@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Rahul Sain<br/>
+		 Enrollment- 2015imscs015<br/>
+		 <a href="mailto:2015imscs015@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Rajendra Choudhary<br/>
+		 Enrollment- 2015imscs016<br/>
+		 <a href="mailto:2015imscs016@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ronit Kumar<br/>
+		 Enrollment- 2015imscs017<br/>
+		 <a href="mailto:2015imscs017@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Shyam Sundar Saini<br/>
+		 Enrollment- 2015imscs019<br/>
+		 <a href="mailto:2015imscs019@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Somesh Choudhary<br/>
+		 Enrollment- 2015imscs021<br/>
+		 <a href="mailto:2015imscs001@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Suman Saurav<br/>
+		 Enrollment- 2015imscs021<br/>
+		 <a href="mailto:2015imscs021@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Sunil Kumar Meena<br/>
+		 Enrollment- 2015imscs022<br/>
+		 <a href="mailto:2015imscs022@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ugrasen Gurjar<br/>
+		 Enrollment- 2015imscs023<br/>
+		 <a href="mailto:2015imscs023@curaj.ac.in">Email-</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Varinder Kumar<br/>
+		 Enrollment- 2015imscs024<br/>
+		 <a href="mailto:2015imscs024@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Vikas Choudhary<br/>
+		 Enrollment- 2015imscs025<br/>
+		 <a href="mailto:2015imscs025@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Vivek Shukla<br/>
+		 Enrollment- 2015imscs026<br/>
+		 <a href="mailto:2015imscs026@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Praveen Prashant<br/>
+		 Enrollment- 2014imscs021<br/>
+		 <a href="mailto:2014imscs021@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ganesh Parsoya<br/>
+		 Enrollment- 2014imscs013<br/>
+		 <a href="mailto:2013imscs013@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  
+	</tbody>
+  </table>
+ </div>
+</div>
+<div class="modal" id="div6">
+  <div class="modal-content animate">
+    <span class="cross" onclick="hideOverlay2();">&times;</span>
+	<img src="" alt="Suman'sPhoto"><br/>
+	Email:<a href="mailto:sumansaurav292@gmail.com">sumansaurav292@gmail</a></br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:2015imscs021@curaj.ac.in">
+	2015imscs021@curaj.ac.in</a></br/>
+	Mobile: 8083621086,7903244389<br/>
+	<img src="" alt="PriyanshuPhoto"><br/>
+	Email:<a href="mailto:2015imscs014@curaj.ac.in">2015imscs014@curaj.ac.in</a></br/>
+	Mobile: 7728028599
+  </div>
+</div>
+</br><span>&copy; 2018</span>
+<a href="https://www.facebook.com/suman.saurav.292"><img src="fb.ico" alt="facebook"></a>
+</footer>
+<script src="is.js"></script>
+</body>
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Theory Of Computation</title>
+<link href="toc.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <div id="div1">
+      <img src="logo.gif" alt="university_logo">
+    </div>
+    <div id="div2">
+      <p id="heading">CENTRAL UNIVERSITY OF RAJASTHAN</p><br/>
+    </div>
+	<span id="sub-heading">Integrated Msc Computer Science VI<sup>th</sup> Semester(2015 Batch)</span>
+    <nav class="clearfix">
+	 <ul>
+	    <li><button class="navbutton"><a href="home.html">Home</a></button></li>
+	    <li><div class="dropdown"><button class="navbutton">Quiz &#x25BE;</button>
+		       <div class="dropdown-content">
+			      <ul>
+				    <li><button><a href="daa.html">Design And Analysis of Algorithms</a>
+					</button></li><br/>
+				    <li><button id="btn2"><a href="toc.html">Theory Of Computation</a>
+					</button></li><br/>
+				    <li><button id="btn3"><a href="cg.html">Computer Graphics</a>
+					</button></li><br/>
+				    <li><button id="btn4"><a href="it.html">Internet Technologies</a>
+					</button></li>
+				    <li><button id="btn5"><a href="is.html">Information Security</a>
+					</button></li><br/>
+				    <li><button id="btn6"><a href="ip.html">Image Processing</a>
+					</button></li>
+				  </ul>
+			   </div>
+		</li>
+		<li><div class="dropdown"><button class="navbutton" style="width: 150px;">Previous year Questions&#x25BE;</button>
+		<div class="dropdown-content">
+			      <ul>
+				    <li><button><a href="ds.pdf" download>Logic and Discrete Mathematics(2010)</a>
+					</button></li><br/>
+				    <li><button id="btn2"><a href="eose2017.pdf" download>Information Security(2016)</a>
+					</button></li><!--<br/>
+				    <li><button id="btn3"><a href="cg.html">Computer Graphics</a>
+					</button></li><br/>
+				    <li><button id="btn4"><a href="it.html">Internet Technologies</a>
+					</button></li>
+				    <li><button id="btn5"><a href="is.html">Information Security</a>
+					</button></li><br/>
+				    <li><button id="btn6"><a href="ip.html">Image Processing</a>
+					</button></li>-->
+				  </ul>
+			   </div>
+		</li>
+	    <li><button class="navbutton">Logout</button>
+		</li>
+	 </ul>
+	</nav>
+ </header>
+ <main>
+   <div id="d1" class="main-content">
+	  <p>Q1. Consider the languages L1 = &#934; and L2 = {a}. Which one of the following 
+	  represents L1 L2* U L1*</p>
+	  <img src="toc1.jpg"><br/><br/>
+	  <label class="container"><span>A</span>
+	  <input type="radio" value="1" name="Q1" id="q1o1" onclick="checkAnswer(1,'q1o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>B</span>
+	  <input type="radio" value="2" name="Q1" id="q1o2" onclick="checkAnswer(1,'q1o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark">
+	  </span></label><br/> <label class="container"><span>C</span>
+	   <input type="radio" value="3" name="Q1" id="q1o3" onclick="checkAnswer(1,'q1o3');">
+	   &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>D</span>
+	   <input type="radio" value="4" name="Q1" id="q1o4" onclick="checkAnswer(1,'q1o4');">
+	   &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label><br/>
+	   <button class="next" onclick="next('d1','d2');">Next >></button>
+   </div>
+   
+   <div id="d2" class="main-content">
+	  <p>Q2. What is the complement of the language accepted by the NFA shown below?</p>
+	  <img src="toc2.jpg"><br/><br/>
+	  <label class="container"><span>A</span>
+	  <input type="radio" value="1" name="Q1" id="q2o1" onclick="checkAnswer(2,'q2o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>B</span>
+	  <input type="radio" value="2" name="Q1" id="q2o2" onclick="checkAnswer(2,'q2o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	   <span class="checkmark"></span></label><br/> <label class="container"><span>C</span> 
+	   <input type="radio" value="3" name="Q1" id="q2o3" onclick="checkAnswer(2,'q2o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>D</span>
+	   <input type="radio" value="4" name="Q1" id="q2o4" onclick="checkAnswer(2,'q2o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d1');"> >> Prev </button>
+	   <button class="next" onclick="next('d2','d3');">Next >></button>
+   </div>
+   
+   <div id="d3" class="main-content">
+	 <p>Q3. Given the language L = {ab, aa, baa}, which of the following strings are in L*?<br/><br/>
+	 <small style="font-weight: normal;" >1) abaabaaabaa
+     2) aaaabaaaa
+     3) baaaaabaaaab
+     4) baaaaabaa</small></p>
+	  <label class="container"><span>1, 2 and 3</span>
+	  <input type="radio" value="1" name="Q1" id="q3o1" onclick="checkAnswer(3,'q3o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>2, 3 and 4</span>
+	  <input type="radio" value="2" name="Q1" id="q3o2" onclick="checkAnswer(3,'q3o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>1, 2 and 4</span> 
+	   <input type="radio" value="3" name="Q1" id="q3o3" onclick="checkAnswer(3,'q3o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>1, 3 and 4</span>
+	   <input type="radio" value="4" name="Q1" id="q3o4" onclick="checkAnswer(3,'q3o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d2');"> >> Prev </button>
+	   <button class="next" onclick="next('d3','d4');">Next >></button>
+   </div>
+   
+   <div id="d4" class="main-content">
+	  <p>Q4. Let w be any string of length n is {0,1}*. Let L be the set of all substrings of w.
+	  What is the minimum number of states in a non-deterministic finite automaton that accepts L?</p>
+	  <label class="container"><span>n-1</span>
+	  <input type="radio" value="1" name="Q1" id="q4o1" onclick="checkAnswer(4,'q4o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>n</span>
+	  <input type="radio" value="2" name="Q1" id="q4o2" onclick="checkAnswer(4,'q4o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>n+1</span> 
+	   <input type="radio" value="3" name="Q1" id="q4o3" onclick="checkAnswer(4,'q4o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>2n-1</span>
+	   <input type="radio" value="4" name="Q1" id="q4o4" onclick="checkAnswer(4,'q4o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d3');"> >> Prev </button>
+	   <button class="next" onclick="next('d4','d5');">Next >></button>
+   </div>
+   
+   <div id="d5" class="main-content">
+	  <p>Q5. Which one of the following languages over the alphabet {0,1} is described by the 
+	  regular expression: (0+1)*0(0+1)*0(0+1)*?</p>
+	  <label class="container"><span>The set of all strings containing the substring 00</span>
+	  <input type="radio" value="1" name="Q1" id="q5o1" onclick="checkAnswer(5,'q5o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>The set of all strings containing at most two 0’s</span>
+	  <input type="radio" value="2" name="Q1" id="q5o2" onclick="checkAnswer(5,'q5o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>
+		The set of all strings containing at least two 0’s.</span> 
+	   <input type="radio" value="3" name="Q1" id="q5o3" onclick="checkAnswer(5,'q5o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>The set of all strings that begin and end with either 0 or 1</span>
+	   <input type="radio" value="4" name="Q1" id="q5o4" onclick="checkAnswer(5,'q5o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d4');"> >> Prev </button>
+	   <button class="next" onclick="next('d5','d6');">Next >></button>
+   </div>
+   
+   <div id="d6" class="main-content">
+	  <p>Q6. Which one of the following is FALSE?</p>
+	  <label class="container"><span>There is unique minimal DFA for every regular language</span>
+	  <input type="radio" value="1" name="Q1" id="q6o1" onclick="checkAnswer(6,'q6o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Every NFA can be converted to an equivalent PDA</span>
+	  <input type="radio" value="2" name="Q1" id="q6o2" onclick="checkAnswer(6,'q6o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	    <span class="checkmark"></span></label><br/> <label class="container"><span>
+		Complement of every context-free language is recursive.</span> 
+	   <input type="radio" value="3" name="Q1" id="q6o3" onclick="checkAnswer(6,'q6o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Every nondeterministic PDA can be converted to
+	   an equivalent deterministic PDA</span>
+	   <input type="radio" value="4" name="Q1" id="q6o4" onclick="checkAnswer(6,'q6o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d5');"> >> Prev </button>
+	   <button class="next" onclick="next('d6','d7');">Next >></button>
+   </div>
+   
+   <div id="d7" class="main-content">
+	  <p>Q7.Which of the following statements is false?</p>
+	  <label class="container"><span>Every NFA can be converted to an equivalent DFA</span>
+	  <input type="radio" value="1" name="Q1" id="q7o1" onclick="checkAnswer(7,'q7o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Every non-deterministic Turing machine can be converted 
+	  to an equivalent deterministic Turing machine</span>
+	  <input type="radio" value="2" name="Q1" id="q7o2" onclick="checkAnswer(7,'q7o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Every 
+	  regular language is also a context-free language</span> 
+	  <input type="radio" value="3" name="Q1" id="q7o3" onclick="checkAnswer(7,'q7o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Every subset of a recursively enumerable set is recursive</span>
+	   <input type="radio" value="4" name="Q1" id="q7o4" onclick="checkAnswer(7,'q7o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d6');"> >> Prev </button>
+	   <button class="next" onclick="next('d7','d8');">Next >></button>
+   </div>
+   
+   <div id="d8" class="main-content">
+	  <p>Q8. Which of the following are regular sets?</p>
+	  <img src="toc3.jpg"><br/><br/>
+	  <label class="container"><span>I and IV only</span>
+	  <input type="radio" value="1" name="Q1" id="q8o1" onclick="checkAnswer(8,'q8o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>I and III only</span>
+	  <input type="radio" value="2" name="Q1" id="q8o2" onclick="checkAnswer(8,'q8o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>I only</span> 
+	  <input type="radio" value="3" name="Q1" id="q8o3" onclick="checkAnswer(8,'q8o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>IV only</span>
+	   <input type="radio" value="4" name="Q1" id="q8o4" onclick="checkAnswer(8,'q8o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d7');"> >> Prev </button>
+	   <button class="next" onclick="next('d8','d9');">Next >></button>
+   </div>
+   
+   <div id="d9" class="main-content">
+	  <p>Q9. Which of the following is TRUE?</p>
+	  <label class="container"><span>Every subset of a regular set is regular</span>
+	  <input type="radio" value="1" name="Q1" id="q9o1" onclick="checkAnswer(9,'q9o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Every finite subset of a non-regular set is regular</span>
+	  <input type="radio" value="2" name="Q1" id="q9o2" onclick="checkAnswer(9,'q9o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>The union 
+	  of two non-regular sets is not regular</span> 
+	  <input type="radio" value="3" name="Q1" id="q9o3" onclick="checkAnswer(9,'q9o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Infinite union of finite sets is regular</span>
+	   <input type="radio" value="4" name="Q1" id="q9o4" onclick="checkAnswer(9,'q9o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d8');"> >> Prev </button>
+	   <button class="next" onclick="next('d9','d10');">Next >></button>
+   </div>
+   
+   <div id="d10" class="main-content">
+	  <p>Q10. Which of the following languages is regular?</p>
+	  <img src="toc4.jpg"><br/><br/>
+	  <label class="container"><span>A</span>
+	  <input type="radio" value="1" name="Q1" id="q10o1" onclick="checkAnswer(10,'q10o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>B</span>
+	  <input type="radio" value="2" name="Q1" id="q10o2" onclick="checkAnswer(10,'q10o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>C</span> 
+	  <input type="radio" value="3" name="Q1" id="q10o3" onclick="checkAnswer(10,'q10o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>D</span>
+	   <input type="radio" value="4" name="Q1" id="q10o4" onclick="checkAnswer(10,'q10o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d9');"> >> Prev </button>
+	   <button class="next" onclick="next('d10','d11');">Next >></button>
+   </div>
+   
+   <div id="d11" class="main-content">
+	  <p>Q11. Which one of the following is TRUE?</p>
+	   <img src="toc5.jpg"><br/><br/>
+	  <label class="container"><span>A</span>
+	  <input type="radio" value="1" name="Q1" id="q11o1" onclick="checkAnswer(11,'q11o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>B</span>
+	  <input type="radio" value="2" name="Q1" id="q11o2" onclick="checkAnswer(11,'q11o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>C</span> 
+	  <input type="radio" value="3" name="Q1" id="q11o3" onclick="checkAnswer(11,'q11o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>D</span>
+	   <input type="radio" value="4" name="Q1" id="q11o4" onclick="checkAnswer(11,'q11o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d10');"> >> Prev </button>
+	   <button class="next" onclick="next('d11','d12');">Next >></button>
+   </div>
+   
+   <div id="d12" class="main-content">
+	  <p>Q12. </p>
+	  <img src="toc6.jpg"><br/><br/>
+	  <label class="container"><span>{q0, q1, q2}</span>
+	  <input type="radio" value="1" name="Q1" id="q12o1" onclick="checkAnswer(12,'q12o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>{q0, q1}</span>
+	  <input type="radio" value="2" name="Q1" id="q12o2" onclick="checkAnswer(12,'q12o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>{q0, q1, q2, q3}</span> 
+	  <input type="radio" value="3" name="Q1" id="q12o3" onclick="checkAnswer(12,'q12o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>{q3}</span>
+	   <input type="radio" value="4" name="Q1" id="q12o4" onclick="checkAnswer(12,'q12o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d11');"> >> Prev </button>
+	   <button class="next" onclick="next('d12','d13');">Next >></button>
+   </div>
+   
+   <div id="d13" class="main-content">
+	  <p>Q13.</p>
+	  <img src="toc7.jpg"><br/><br/>
+	  <label class="container"><span>Only (I)</span>
+	  <input type="radio" value="1" name="Q1" id="q13o1" onclick="checkAnswer(13,'q13o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Only (II)</span>
+	  <input type="radio" value="2" name="Q1" id="q13o2" onclick="checkAnswer(13,'q13o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Both (I) and (II)</span> 
+	  <input type="radio" value="3" name="Q1" id="q13o3" onclick="checkAnswer(13,'q13o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Neither (I) nor (II)</span>
+	   <input type="radio" value="4" name="Q1" id="q13o4" onclick="checkAnswer13,'q13o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d12');"> >> Prev </button>
+	   <button class="next" onclick="next('d13','d14');">Next >></button>
+   </div>
+   
+   <div id="d14" class="main-content">
+	  <p>Q14. Consider the regular language L = (111 + 11111)*. The minimum number of states 
+	  in any DFA accepting this languages is:</p>
+	  <label class="container"><span>3</span>
+	  <input type="radio" value="1" name="Q1" id="q14o1" onclick="checkAnswer(14,'q14o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>5</span>
+	  <input type="radio" value="2" name="Q1" id="q14o2" onclick="checkAnswer(14,'q14o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>8</span> 
+	  <input type="radio" value="3" name="Q1" id="q14o3" onclick="checkAnswer(14,'q14o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>9</span>
+	   <input type="radio" value="4" name="Q1" id="q14o4" onclick="checkAnswer(14,'q14o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d13');"> >> Prev </button>
+	   <button class="next" onclick="next('d14','d15');">Next >></button>
+   </div>
+   
+   <div id="d15" class="main-content">
+	  <p>Q15. Consider the following languages. Which one of the following statements is FALSE?</p>
+	  <img src="toc8.jpg"><br/><br/>
+	  <label class="container"><span>L2 is context-free.</span>
+	  <input type="radio" value="1" name="Q1" id="q15o1" onclick="checkAnswer(15,'q15o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>L1 intersection L2 is context-free</span>
+	  <input type="radio" value="2" name="Q1" id="q15o2" onclick="checkAnswer(15,'q15o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Complement
+	  of L2 is recursive.</span> 
+	  <input type="radio" value="3" name="Q1" id="q15o3" onclick="checkAnswer(15,'q15o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Complement of L1 is context-free but not regular</span>
+	   <input type="radio" value="4" name="Q1" id="q15o4" onclick="checkAnswer(15,'q15o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d14');"> >> Prev </button>
+	   <button class="next" onclick="next('d15','d16');">Next >></button>
+   </div>
+   
+   <div id="d16" class="main-content">
+	  <p>Q16. S -> aSa|bSb|a|b; The language generated by the above grammar over the 
+	  alphabet {a,b} is the set of</p>
+	  <label class="container"><span>All palindromes</span>
+	  <input type="radio" value="1" name="Q1" id="q16o1" onclick="checkAnswer(16,'q16o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>All odd length palindromes</span>
+	  <input type="radio" value="2" name="Q1" id="q16o2" onclick="checkAnswer(16,'q16o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Strings that
+	  begin and end with the same symbol</span> 
+	  <input type="radio" value="3" name="Q1" id="q16o3" onclick="checkAnswer(16,'q16o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>All even length palindromes</span>
+	   <input type="radio" value="4" name="Q1" id="q16o4" onclick="checkAnswer(16,'q16o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d15');"> >> Prev </button>
+	   <button class="next" onclick="next('d16','d17');">Next >></button>
+   </div>
+   
+   <div id="d17" class="main-content">
+	  <p>17. Let L = L1 &cap; L2, where L1 and L2 are languages as defined below:<br/><br/>
+	  <small style="font-weight: normal;" >L1 = {a^{m}b^{m}ca^{n}b^{n} | m, n >= 0 }
+      L2 = {a^{i}b^{j}c^{k} | i, j, k >= 0 }</small></p>
+	  <label class="container"><span>Not recursive</span>
+	  <input type="radio" value="1" name="Q1" id="q17o1" onclick="checkAnswer(17,'q17o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>Regular</span>
+	  <input type="radio" value="2" name="Q1" id="q17o2" onclick="checkAnswer(17,'q17o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>Context free 
+	  but not regular</span> 
+	  <input type="radio" value="3" name="Q1" id="q17o3" onclick="checkAnswer(17,'q17o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>Recursively enumerable but not context free</span>
+	   <input type="radio" value="4" name="Q1" id="q17o4" onclick="checkAnswer(17,'q17o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d16');"> >> Prev </button>
+	   <button class="next" onclick="next('d17','d18');">Next >></button>
+   </div>
+   
+   <div id="d18" class="main-content">
+	  <p>18. The language L= {0i21i | i≥0 } over the alphabet {0,1, 2} is:</p>
+	  <label class="container"><span>not recursive</span>
+	  <input type="radio" value="1" name="Q1" id="q18o1" onclick="checkAnswer(18,'q18o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>is recursive and is a deterministic CFL</span>
+	  <input type="radio" value="2" name="Q1" id="q18o2" onclick="checkAnswer(18,'q18o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>is a regular 
+	  language</span> 
+	  <input type="radio" value="3" name="Q1" id="q18o3" onclick="checkAnswer(18,'q18o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>is not a deterministic CFL but a CFL.</span>
+	   <input type="radio" value="4" name="Q1" id="q18o4" onclick="checkAnswer(18,'q18o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d17');"> >> Prev </button>
+	   <button class="next" onclick="next('d18','d19');">Next >></button>
+   </div>
+   
+   <div id="d19" class="main-content">
+	  <p>19. Consider the CFG with {S,A,B) as the non-terminal alphabet, {a,b) as the terminal 
+	  alphabet, S as the start symbol and the following set of production rules<br/><br/>
+	  <small style="font-weight: normal;">S --> aB  &nbsp;&nbsp;     S --> bA &nbsp;&nbsp;
+      B --> b    &nbsp;&nbsp;     A --> a &nbsp;&nbsp;
+      B --> bS    &nbsp;&nbsp;    A --> aS &nbsp;&nbsp;
+      B --> aBB   &nbsp;&nbsp;    A --> bAA</small></p>
+	  <label class="container"><span>aaaabb</span>
+	  <input type="radio" value="1" name="Q1" id="q19o1" onclick="checkAnswer(19,'q19o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>aabbbb</span>
+	  <input type="radio" value="2" name="Q1" id="q19o2" onclick="checkAnswer(19,'q19o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>aabbab</span> 
+	  <input type="radio" value="3" name="Q1" id="q19o3" onclick="checkAnswer(19,'q19o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>abbbba</span>
+	   <input type="radio" value="4" name="Q1" id="q19o4" onclick="checkAnswer(19,'q19o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d18');"> >> Prev </button>
+	   <button class="next" onclick="next('d19','d20');">Next >></button>
+   </div>
+   
+   <div id="d20" class="main-content">
+	  <p>20. Consider the languages:<br/><br/>
+	  <small style="font-weight: normal;">
+	    L1 = {anbncm | n, m > 0} <br/>
+        L2 = {anbmcm | n, m > 0} 
+	  </small>
+	  </p>
+	  <label class="container"><span>L1 ∩ L2 is a context-free language</span>
+	  <input type="radio" value="1" name="Q1" id="q20o1" onclick="checkAnswer(20,'q20o1');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check true"></span> <span class="checkmark"></span></label>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <label class="container"><span>L1 U L2 is a context-free language</span>
+	  <input type="radio" value="2" name="Q1" id="q20o2" onclick="checkAnswer(20,'q20o2');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span> 
+	  <span class="checkmark"></span></label><br/> <label class="container"><span>L1 and L2 
+	  are context-free language.</span> 
+	  <input type="radio" value="3" name="Q1" id="q20o3" onclick="checkAnswer(20,'q20o3');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span><span class="checkmark"></span></label>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   <label class="container"><span>L1 ∩ L2 is a context sensitive language</span>
+	   <input type="radio" value="4" name="Q1" id="q20o4" onclick="checkAnswer(20,'q20o4');"> 
+	  &nbsp;&nbsp;&nbsp;<span class="check"></span>
+	   <span class="checkmark"></span></label><br/>
+	   <button class="prev" onclick="prev('d19');"> >> Prev </button>
+	   <!--<button class="next" onclick="next('d20','d21');">Next >></button>-->
+   </div>
+ </main>
+ <footer>
+<button onclick="showOverlay1();">Our Batch</button>
+<button class="foobtn" onclick="showOverlay2();">Contact Us</button>
+<div class="modal" id="div5">
+ <div class="modal-content animate">
+  <span class="cross" onclick="hideOverlay1();">&times;</span>
+  <table style="padding: 0;">
+    <caption>VI<sup>th</sup> Semester</caption>
+	<tbody>
+	  <tr>
+	    <td class="pp">
+		 <img src="slider1.jpg" alt="Aakash Choudhary" style="width: 80px; height: auto;">
+		</td>
+		<td class="desc">
+		 <p>Aakash Choudhary<br/>
+		 Enrollment- 2015imscs001<br/>
+		 <a href="mailto:2015imscs001@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp" id="two">
+		 <!--<img src="20150501_202542.jpg" alt="It's me" style="width: 80px; height: auto;">-->
+		</td>
+		<td class="desc">
+		 <p>Ashish Gautam<br/>
+		 Enrollment- 2015imscs002<br/>
+		 <a href="mailto:2015imscs002@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ashish Yadav<br/>
+		 Enrollment- 2015imscs003<br/>
+		 <a href="mailto:2015imscs003@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ipsita Patnaik<br/>
+		 Enrollment- 2015imscs005<br/>
+		 <a href="mailto:2015imscs005@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Kumar Shikhar<br/>
+		 Enrollment- 2015imscs006<br/>
+		 <a href="mailto:2015imscs006@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Lav Kumar<br/>
+		 Enrollment- 2015imscs007<br/>
+		 <a href="mailto:2015imscs007@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Manish Kumar Choumiyan<br/>
+		 Enrollment- 2015imscs009<br/>
+		 <a href="mailto:2015imscs009@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Nitesh Sukhwani<br/>
+		 Enrollment- 2015imscs010<br/>
+		 <a href="mailto:2015imscs010@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Pravin Choudhary<br/>
+		 Enrollment- 2015imscs012<br/>
+		 <a href="mailto:2015imscs012@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Priyanshu Kumari<br/>
+		 Enrollment- 2015imscs014<br/>
+		 <a href="mailto:2015imscs014@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Rahul Sain<br/>
+		 Enrollment- 2015imscs015<br/>
+		 <a href="mailto:2015imscs015@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Rajendra Choudhary<br/>
+		 Enrollment- 2015imscs016<br/>
+		 <a href="mailto:2015imscs016@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ronit Kumar<br/>
+		 Enrollment- 2015imscs017<br/>
+		 <a href="mailto:2015imscs017@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Shyam Sundar Saini<br/>
+		 Enrollment- 2015imscs019<br/>
+		 <a href="mailto:2015imscs019@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Somesh Choudhary<br/>
+		 Enrollment- 2015imscs021<br/>
+		 <a href="mailto:2015imscs001@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Suman Saurav<br/>
+		 Enrollment- 2015imscs021<br/>
+		 <a href="mailto:2015imscs021@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Sunil Kumar Meena<br/>
+		 Enrollment- 2015imscs022<br/>
+		 <a href="mailto:2015imscs022@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ugrasen Gurjar<br/>
+		 Enrollment- 2015imscs023<br/>
+		 <a href="mailto:2015imscs023@curaj.ac.in">Email-</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Varinder Kumar<br/>
+		 Enrollment- 2015imscs024<br/>
+		 <a href="mailto:2015imscs024@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Vikas Choudhary<br/>
+		 Enrollment- 2015imscs025<br/>
+		 <a href="mailto:2015imscs025@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Vivek Shukla<br/>
+		 Enrollment- 2015imscs026<br/>
+		 <a href="mailto:2015imscs026@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Praveen Prashant<br/>
+		 Enrollment- 2014imscs021<br/>
+		 <a href="mailto:2014imscs021@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ganesh Parsoya<br/>
+		 Enrollment- 2014imscs013<br/>
+		 <a href="mailto:2013imscs013@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  
+	</tbody>
+  </table>
+ </div>
+</div>
+<div class="modal" id="div6">
+  <div class="modal-content animate">
+    <span class="cross" onclick="hideOverlay2();">&times;</span>
+	<img src="" alt="Suman'sPhoto"><br/>
+	Email:<a href="mailto:sumansaurav292@gmail.com">sumansaurav292@gmail</a></br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:2015imscs021@curaj.ac.in">
+	2015imscs021@curaj.ac.in</a></br/>
+	Mobile: 8083621086,7903244389<br/>
+	<img src="" alt="PriyanshuPhoto"><br/>
+	Email:<a href="mailto:2015imscs014@curaj.ac.in">2015imscs014@curaj.ac.in</a></br/>
+	Mobile: 7728028599
+  </div>
+</div>
+</br><span>&copy; 2018</span>
+<a href="https://www.facebook.com/suman.saurav.292"><img src="fb.ico" alt="facebook"></a>
+</footer>
+<script src="toc.js"></script>
+</body>
+</html>

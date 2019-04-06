@@ -1,0 +1,515 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="home.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <div id="div1">
+      <img src="logo.gif" alt="university_logo">
+    </div>
+    <div id="div2">
+      <p id="heading">CENTRAL UNIVERSITY OF RAJASTHAN</p><br/>
+    </div>
+	<span id="sub-heading">Integrated Msc Computer Science VI<sup>th</sup> Semester(2015 Batch)</span>
+    <nav class="clearfix">
+	 <ul>
+	    <li><button class="navbutton">Home</button></li>
+	    <li><div class="dropdown"><button class="navbutton">Quiz &#x25BE;</button>
+		       <div class="dropdown-content">
+			      <ul>
+				    <li><button><a href="daa.html">Design And Analysis of Algorithms</a>
+					</button></li><br/>
+				    <li><button id="btn2"><a href="toc.html">Theory Of Computation</a>
+					</button></li><br/>
+				    <li><button id="btn3"><a href="cg.html">Computer Graphics</a>
+					</button></li><br/>
+				    <li><button id="btn4"><a href="it.html">Internet Technologies</a>
+					</button></li>
+				    <li><button id="btn5"><a href="is.html">Information Security</a>
+					</button></li><br/>
+				    <li><button id="btn6"><a href="ip.html">Image Processing</a>
+					</button></li>
+				  </ul>
+			   </div>
+		</li>
+		<li><div class="dropdown"><button class="navbutton" style="width: 150px;">Previous year Questions&#x25BE;</button>
+		<div class="dropdown-content">
+			      <ul>
+				    <li><button><a href="ds.pdf" download>Logic and Discrete Mathematics(2010)</a>
+					</button></li><br/>
+				    <li><button id="btn2"><a href="eose2017.pdf" download>Information Security(2016)</a>
+					</button></li><!--<br/>
+				    <li><button id="btn3"><a href="cg.html">Computer Graphics</a>
+					</button></li><br/>
+				    <li><button id="btn4"><a href="it.html">Internet Technologies</a>
+					</button></li>
+				    <li><button id="btn5"><a href="is.html">Information Security</a>
+					</button></li><br/>
+				    <li><button id="btn6"><a href="ip.html">Image Processing</a>
+					</button></li>-->
+				  </ul>
+			   </div>
+		</li>
+	    <li><button class="navbutton" ><a href = "logout.php">Logout</a></button></li>
+	 </ul>
+	</nav>
+ </header>
+ <main>
+    <img src="faceless.jpg">
+	<div class="tab">
+  <button class="tablinks" onclick="openCourse(event, 'daa')">Design and Analysis of Algorithms</button>
+  <button class="tablinks" onclick="openCourse(event, 'toc')">Theory Of Computation</button>
+  <button class="tablinks" onclick="openCourse(event, 'cg')">Computer Graphics</button>
+  <button class="tablinks" onclick="openCourse(event, 'it')">Internet Technologies</button>
+  <button class="tablinks" onclick="openCourse(event, 'is')">Information Security</button>
+  <button class="tablinks" onclick="openCourse(event, 'ip')">Image Processing</button>
+</div>
+
+<div id="daa" class="tabcontent">
+  <h3>Notes</h3>
+  <form id="f1" action="Home.html" method="post">
+    <input type="file" name="daa_notes">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+  <ol>
+  <li>Lecture Notes on Design and Analysis of Algorithms &nbsp;
+  <a href="Design and Analysis of Algorithms_2.pdf" download>Download</a></li>
+  </ol>
+  </p>
+  <h3>Reference Books</h3>
+  <form id="f2" action="Home.html" method="post">
+    <input type="file" name="daa_books">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+  <ol>
+  <li>Introduction To Algorithms - Thomas H. Cormen &nbsp;
+  <a href="[Cormen-AL2011]Introduction_To_Algorithms-A3.pdf" download>Download</a></li>
+  <li>The Design and Analysis of Algorithms - Dexter C Kozen, Cornell University &nbsp;
+  <a href="daa.pdf" download>Download</a></li>
+  <li>Design and Analysis of Algorithms - Tutorials Point &nbsp;
+  <a href="design_and_analysis_of_algorithms_tutorial.pdf" download>Download</a></li>
+  </ol>
+  </p>
+  <h3>Miscellaneous</h3>
+  <form id="f3" action="Home.html" method="post">
+    <input type="file" name="daa_misc">
+    <input type="submit" value="upload">
+  </form>
+  
+</div>
+
+<div id="toc" class="tabcontent">
+  <h3>Notes</h3>
+  <form id="f4" action="Home.html" method="post">
+    <input type="file" name="toc_notes">
+    <input type="submit" value="upload">
+  </form>
+  <p><ol>
+    <li>2nd Internal notes - Ipsita Patnaik(2015imscs005) &nbsp;
+	<a href="1aatoc class.pdf">Download</a></li>
+	
+  </ol></p> 
+  <h3>Reference Books</h3>
+  <form id="f5" action="Home.html" method="post">
+    <input type="file" name="toc_books">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+    <ol>
+	  <li>Introduction to Theory of Computation - Anil Maheshwari, Michiel Smid &nbsp;
+	  <a href="TheoryOfComputation.pdf" download>Download</a></li>
+	  <li>Introduction to Theory of Computation - Michael Sipser &nbsp;
+	  <a href="Introduction-To-The-Theory-Of-Computation-Michael-Sipse.pdf" download>Download</a></li>
+	  <li>Intro to Automata Theory  Languages and Computation - John E Hopcroft  Jeff &nbsp;
+	  <a href="Intro to Automata Theory  Languages and Computation _ John E Hopcroft  Jeff.pdf" download>Download</a></li>
+	</ol>
+  </p>
+<h3>Miscellaneous</h3>
+  <form id="f6" action="Home.html" method="post">
+    <input type="file" name="toc_misc">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+  <ol>
+    <li>Regular Expression to DFA conversion &nbsp;
+	<a href="RE_TO_DFA_pptcd0309.pdf">Download</a></li>
+	<li>Regular Expression to DFA conversion &nbsp;
+	<a href="RE_TO_DFA_pptcd0310.pdf">Download</a></li>
+  </ol>
+  </p>  
+</div>
+
+<div id="cg" class="tabcontent">
+  <h3>Notes</h3>
+  <form id="f7" action="Home.html" method="post">
+    <input type="file" name="cg_notes">
+    <input type="submit" value="upload">
+  </form>
+  <p><ol>
+    <li>Reflection notes - Vivek Shukla(2015imscs026) &nbsp;
+	<a href="New Doc 2018-04-22.pdf">Download</a></li>
+	<li>Practice questions solved - Pravin Choudhary(2015imscs012) &nbsp;
+	<a href="New Doc 2018-02-23.pdf">Download</a></li>
+	
+  </ol></p> 
+  <h3>Reference Books</h3>
+  <form id="f8" action="Home.html" method="post">
+    <input type="file" name="cg_books">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+    <ol>
+	  <li>Computer Graphics C version - Donald Hearn, M. Pauline Baker &nbsp;
+	  <a href="[Donald_Hearn,_M._Pauline_Baker]_Computer_Graphics(BookFi.org).pdf" download>Download</a></li>
+	  <li>Introduction to Computer Graphics - David J. Eck &nbsp;
+	  <a href="graphicsbook-linked.pdf" download>Download</a></li>
+	  <li>COMPUTER GRAPHICS &nbsp;
+	  <a href="BCA-503.pdf" download>Download</a></li>
+	</ol>
+  </p>
+<h3>Miscellaneous</h3>
+  <form id="f9" action="Home.html" method="post">
+    <input type="file" name="cg_misc">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+  <ol>
+    <li>Assignment - Pravin Choudhary(2015imscs012) &nbsp;
+	<a href="New Doc 2018-03-24.pdf">Download</a></li>
+  </ol>
+  </p>  
+</div>
+<div id="it" class="tabcontent">
+  <h3>Notes</h3>
+  <form id="f10" action="Home.html" method="post">
+    <input type="file" name="it_notes">
+    <input type="submit" value="upload">
+  </form>
+  <h3>Reference Books</h3>
+  <!--<form id="f11" action="Home.html" method="post">
+    <input type="file" name="it_books">
+    <input type="submit" value="upload">
+  </form>-->
+  <p>
+    <ol>
+	  <li>HTML and CSS - Design and Build Websites - Jon Ducket &nbsp;
+	  <a href="HTML and CSS - Design and Build Websites - Jon Duckett - November 2011.pdf" download>Download</a></li>
+	  <li>HTML5 - The Missing Manual - Matthew MacDonal &nbsp;
+	  <a href="HTML5 - The Missing Manual - Matthew MacDonald - August 2011.pdf" download>Download</a></li>
+	  <li>JavaScript The Complete Reference 3rd Edition &nbsp;
+	  <a href="JavaScript The Complete Reference 3rd Edition.pdf" download>Download</a></li>
+	  <li>JavaScript - The Definitive Guide - David Flanagan &nbsp;
+	  <a href="JavaScript - The Definitive Guide - David Flanagan - 6th Edition - May 201.pdf" download>Download</a></li>
+	  <li>Professional Javascript for Web Developers - Nicholas Zakas &nbsp;
+	  <a href="Professional Javascript for Web Developers - Nicholas Zakas - 3rd Edition - January 2012.pdf" download>Download</a></li>
+	  <li>JavaTheCompleteReference &nbsp;
+	  <a href="JavaTheCompleteReference.pdf" download>Download</a></li>
+	  <li>Advanced-java &nbsp;
+	  <a href="Advanced-java.pdf" download>Download</a></li>
+	  <li>java_tutorial &nbsp;
+	  <a href="java_tutorial.pdf" download>Download</a></li>
+	</ol>
+  </p>
+<h3>Miscellaneous</h3>
+  <!--<form id="f12" action="Home.html" method="post">
+    <input type="file" name="it_misc">
+    <input type="submit" value="upload">
+  </form>-->
+  <p>
+  <ol>
+    <li>Advanced Java &nbsp;
+	<a href="Advanced Java.pptx">Download</a></li>
+	<li>RMI &nbsp;
+	<a href="RMI.pptx">Download</a></li>
+  </ol>
+  </p>  
+</div>
+<div id="is" class="tabcontent">
+  <h3>Notes</h3>
+  <form id="f13" action="Home.html" method="post">
+    <input type="file" name="is_notes">
+    <input type="submit" value="upload">
+  </form>
+  <p><ol>
+    <li>RC-4, RSA, MD5 - Priyanshu Kumari(2015imscs014) &nbsp;
+	<a href="rc4 md5 sha.pdf">Download</a></li>
+	<li>MD-5 &nbsp;
+	<a href="New Doc 2018-04-24.pdf">Download</a></li>
+  </ol></p> 
+  <h3>Reference Books</h3>
+  <form id="f14" action="Home.html" method="post">
+    <input type="file" name="is_books">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+    <ol>
+	  <li>Information Security The Complete Reference &nbsp;
+	  <a href="InformationSecurityEnglish.pdf" download>Download</a></li>
+	  <li>INFORMATION SECURITY LECTURE NOTES &nbsp;
+	  <a href="lecture1423183198.pdf" download>Download</a></li>
+	  <li>Cryptography_and_Network_Security - Stallings &nbsp;
+	  <a href="Stallings_Cryptography_and_Network_Security.pdf" download>Download</a></li>
+	  </ol>
+  </p>
+<h3>Miscellaneous</h3>
+  <form id="f15" action="Home.html" method="post">
+    <input type="file" name="it_misc">
+    <input type="submit" value="upload">
+  </form>
+</div>
+<div id="ip" class="tabcontent">
+  <h3>Notes</h3>
+  <form id="f13" action="Home.html" method="post">
+    <input type="file" name="ip_notes">
+    <input type="submit" value="upload">
+  </form>
+ 
+  <h3>Reference Books</h3>
+  <form id="f14" action="Home.html" method="post">
+    <input type="file" name="ip_books">
+    <input type="submit" value="upload">
+  </form>
+  <p>
+    <ol>
+	  <li>Digital Image Processing &nbsp;
+	  <a href="1-Introduction_16x9.pdf" download>Download</a></li>
+	  <li>DIGITAL IMAGE PROCESSING - WILLIAM K. PRATT &nbsp;
+	  <a href="Addison Wesley - Digital Image Processing, 3rd Edition.pdf" download>Download</a></li>
+	  <li>Digital Image Processing - Rafael C. Gonzalez, Richard E. Woods &nbsp;
+	  <a href="Digital_Image_Processing_3rdEd_truncated.pdf" download>Download</a></li>
+	  </ol>
+  </p>
+<h3>Miscellaneous</h3>
+  <form id="f15" action="Home.html" method="post">
+    <input type="file" name="it_misc">
+    <input type="submit" value="upload">
+  </form>
+</div>
+ </main>
+ <footer>
+<button onclick="showOverlay1();">Our Batch</button>
+<button class="foobtn" onclick="showOverlay2();">Contact Us</button>
+<div class="modal" id="div5">
+ <div class="modal-content animate">
+  <span class="cross" onclick="hideOverlay1();">&times;</span>
+  <table class="container" style="padding: 0;">
+    <caption>VI<sup>th</sup> Semester</caption>
+	<tbody>
+	  <tr>
+	    <td class="pp">
+		 <img src="slider1.jpg" alt="Aakash Choudhary" style="width: 80px; height: auto;">
+		</td>
+		<td class="desc">
+		 <p>Aakash Choudhary<br/>
+		 Enrollment- 2015imscs001<br/>
+		 <a href="mailto:2015imscs001@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp" id="two">
+		 <!--<img src="20150501_202542.jpg" alt="It's me" style="width: 80px; height: auto;">-->
+		</td>
+		<td class="desc">
+		 <p>Ashish Gautam<br/>
+		 Enrollment- 2015imscs002<br/>
+		 <a href="mailto:2015imscs002@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ashish Yadav<br/>
+		 Enrollment- 2015imscs003<br/>
+		 <a href="mailto:2015imscs003@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ipsita Patnaik<br/>
+		 Enrollment- 2015imscs005<br/>
+		 <a href="mailto:2015imscs005@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Kumar Shikhar<br/>
+		 Enrollment- 2015imscs006<br/>
+		 <a href="mailto:2015imscs006@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Lav Kumar<br/>
+		 Enrollment- 2015imscs007<br/>
+		 <a href="mailto:2015imscs007@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Manish Kumar Choumiyan<br/>
+		 Enrollment- 2015imscs009<br/>
+		 <a href="mailto:2015imscs009@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Nitesh Sukhwani<br/>
+		 Enrollment- 2015imscs010<br/>
+		 <a href="mailto:2015imscs010@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Pravin Choudhary<br/>
+		 Enrollment- 2015imscs012<br/>
+		 <a href="mailto:2015imscs012@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Priyanshu Kumari<br/>
+		 Enrollment- 2015imscs014<br/>
+		 <a href="mailto:2015imscs014@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Rahul Sain<br/>
+		 Enrollment- 2015imscs015<br/>
+		 <a href="mailto:2015imscs015@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Rajendra Choudhary<br/>
+		 Enrollment- 2015imscs016<br/>
+		 <a href="mailto:2015imscs016@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ronit Kumar<br/>
+		 Enrollment- 2015imscs017<br/>
+		 <a href="mailto:2015imscs017@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Shyam Sundar Saini<br/>
+		 Enrollment- 2015imscs019<br/>
+		 <a href="mailto:2015imscs019@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Somesh Choudhary<br/>
+		 Enrollment- 2015imscs021<br/>
+		 <a href="mailto:2015imscs001@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Suman Saurav<br/>
+		 Enrollment- 2015imscs021<br/>
+		 <a href="mailto:2015imscs021@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Sunil Kumar Meena<br/>
+		 Enrollment- 2015imscs022<br/>
+		 <a href="mailto:2015imscs022@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ugrasen Gurjar<br/>
+		 Enrollment- 2015imscs023<br/>
+		 <a href="mailto:2015imscs023@curaj.ac.in">Email-</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Varinder Kumar<br/>
+		 Enrollment- 2015imscs024<br/>
+		 <a href="mailto:2015imscs024@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Vikas Choudhary<br/>
+		 Enrollment- 2015imscs025<br/>
+		 <a href="mailto:2015imscs025@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Vivek Shukla<br/>
+		 Enrollment- 2015imscs026<br/>
+		 <a href="mailto:2015imscs026@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Praveen Prashant<br/>
+		 Enrollment- 2014imscs021<br/>
+		 <a href="mailto:2014imscs021@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  <tr>
+	    <td class="pp"></td>
+		<td class="desc">
+		  <p>Ganesh Parsoya<br/>
+		 Enrollment- 2014imscs013<br/>
+		 <a href="mailto:2013imscs013@curaj.ac.in">Email</a></p>
+		</td>
+	  </tr>
+	  
+	</tbody>
+  </table>
+ </div>
+</div>
+<div class="modal" id="div6">
+  <div class="modal-content animate">
+    <span class="cross" onclick="hideOverlay2();">&times;</span>
+	<img src="" alt="Suman'sPhoto"><br/>
+	Email:<a href="mailto:sumansaurav292@gmail.com">sumansaurav292@gmail</a></br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:2015imscs021@curaj.ac.in">
+	2015imscs021@curaj.ac.in</a></br/>
+	Mobile: 8083621086,7903244389<br/>
+	<img src="" alt="PriyanshuPhoto"><br/>
+	Email:<a href="mailto:2015imscs014@curaj.ac.in">2015imscs014@curaj.ac.in</a></br/>
+	Mobile: 7728028599
+  </div>
+</div>
+</br><span>&copy; 2018</span>
+<a href="https://www.facebook.com/suman.saurav.292"><img src="fb.ico" alt="facebook"></a>
+</footer>
+<script src="home.js"></script>
+</body>
+</html>
